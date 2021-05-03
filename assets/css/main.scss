@@ -1,0 +1,297 @@
+$black: #222222;
+$blue-dark: #0A4486;
+$blue: #00B3CD;
+// $blue-light: #00B3CD;
+$orange: #FF662D;
+$white: #ffffff;
+
+@font-face {
+    font-family: Redonta;
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Redonda-Bold.otf');
+}
+
+@font-face {
+    font-family: Redonta;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/Redonda-ExtraBold.otf');
+}
+
+body{
+    background: $black;
+}
+
+.container{
+    max-width: 1460px !important;
+}
+
+h1, h2, h3, p, li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+span.preco {
+    font-weight: normal;
+    font-size: 27px;
+}
+
+.btn-enter {
+    text-transform: uppercase;
+    border: 0;
+    background-color: #FF662D;
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 10px 70px;
+    font-weight: 600;
+    font-family: 'Redonta';
+    white-space: normal;
+    &:hover {
+        @extend .btn-enter;
+      }
+}
+
+section {
+	padding: 80px 0;
+}
+
+#header{
+    h1{
+        font-weight: 900;
+        color: $white;
+        font-size: 31px;
+        line-height: 40px;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    h2{
+        color: $white;
+        font-size: 23px;
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+    .logo{
+        width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .heatmap{
+        width: 100%;
+    }
+    p{
+        color: $white;
+        margin-bottom: 20px;
+    }
+    .scroll{
+        color: #fff;
+        position: absolute;
+        margin: 0 auto;
+        bottom: 20px;
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
+    .scroll:after {
+        content: '';
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        margin: auto;
+        bottom: 10px;
+        right: 0;
+        left: 0;
+        -webkit-animation: 3s arrow infinite ease;
+        animation: 3s arrow infinite ease;
+        border-right: 2px solid #FFF;
+        border-bottom: 2px solid #FFF;
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    
+}
+
+#labirinto{
+    background: $blue;
+    p{
+        color: #fff;
+    }
+    h3{
+        font-weight: 900;
+        color: $white;
+        font-size: 31px;
+        line-height: 40px;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    .description{
+        color: $white;
+        font-size: 23px;
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+    .labirinto{
+        width: 100%;
+    }
+}
+
+#conversao{
+    @extend #header;
+    .conversao{
+        width: 100%;
+    }
+}
+
+#recorrente{
+    @extend #labirinto;
+    .recorrente{
+        width: 100%;
+    }
+}
+
+#limites{
+    @extend #header;
+    .limites{
+        width: 100%;
+    }
+}
+
+#series{
+    @extend #labirinto;
+    // background: $black;
+    img{
+        margin-bottom: 20px;
+    }
+    .title{
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .description{
+        font-size: 16px;
+    }
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+        font-size: 80px;
+        color: #fff;
+        margin: -40px 5px -25px 5px;
+    }
+    .serie{
+        padding: 15px;
+        margin: 15px;
+    }
+}
+
+#depoimentos{
+    @extend #series;
+    background: $black;
+    .box{
+        background: $blue;
+        border-radius: 20px;
+        padding: 15px;
+        margin: 15px;
+        box-shadow: 0 0 15px rgb(0 179 205 / 50%);
+        min-height: 410px;
+    }
+    img{
+        border-radius: 50%;
+        max-width: 150px;
+        display: block;
+        margin: 0 auto 10px;
+    }
+    .name{
+        font-weight: bold;
+    }
+    .depoimento{
+        font-size: 16px;
+        font-style: italic;
+    }
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+        font-size: 80px;
+        color: #fff;
+        margin: -20px 5px -25px 5px;
+    }
+}
+
+#whatsapp{
+    @extend #series;
+    .btn-whatsapp{
+        white-space: normal;
+        text-transform: uppercase;
+        border: 0;
+        background-color: #23CC63;
+        box-shadow: none;
+        border-radius: 5px;
+        padding: 20px 70px;
+        font-weight: 600;
+        font-family: 'Redonta';
+        // &:hover {
+        //     background-color: #23CC63;
+        // }
+    }
+}
+
+footer{
+    padding: 20px 0;
+    p{
+        font-size: 14px;
+        color: #fff;
+    }
+    small{
+        color: #fff;
+    }
+    a{
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 767px){
+    section{
+        padding: 40px 0;
+    }
+    #labirinto{
+        .labirinto{
+            margin-bottom: 30px;
+        }
+    }
+    #conversao{
+        .conversao{
+            margin-bottom: 30px;
+        }
+    }
+    #recorrente{
+        .recorrente{
+            margin-bottom: 30px;
+        }
+    }
+    #limites{
+        .limites{
+            margin-bottom: 30px;
+        }
+    }
+    #series h3{
+        margin-bottom: -10px;
+    }
+    #series .description{
+        margin-bottom: -30px;
+    }
+    #depoimentos h3{
+        margin-bottom: 20px;
+        
+    }
+    #depimentos .box{
+        min-height: 410px;
+    }
+    #depoimentos .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+        margin: -35px 5px -25px 5px !important;
+    }
+    #whatsapp .btn-whatsapp{
+        padding: 20px 25px;
+    }
+    #whatsapp h3{
+        margin-bottom: 20px;
+    }
+}
