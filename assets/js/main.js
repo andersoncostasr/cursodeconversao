@@ -35,8 +35,8 @@ $(function () {
 
     //Rotator do Whatsapp
     var atendente = []
-    atendente[0] = 'https://api.whatsapp.com/send?phone=5521990802711&text=Eu%20quero%20saber%20mais%20Curso%20o%20de%20Dieta%20Conversão'
-    atendente[1] = 'https://api.whatsapp.com/send?phone=5521994292234&text=Eu%20quero%20saber%20mais%20Curso%20o%20de%20Dieta%20Conversão'
+    atendente[0] = 'https://api.whatsapp.com/send?phone=5521990802711&text=Eu%20quero%20saber%20mais%20sobre%20o%20Curso%20de%20Conversão'
+    atendente[1] = 'https://api.whatsapp.com/send?phone=5521994292234&text=Eu%20quero%20saber%20mais%20sobre%20o%20Curso%20de%20Conversão'
 
     var random = Math.floor(Math.random() * atendente.length);
 
