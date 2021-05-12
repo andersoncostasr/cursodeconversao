@@ -47,7 +47,7 @@ section {
   padding: 80px 0;
 }
 
-#header h1, #limites h1, #conversao h1 {
+#header h1, .obrigado h1, #limites h1, #conversao h1 {
   font-weight: 900;
   color: #ffffff;
   font-size: 31px;
@@ -55,25 +55,25 @@ section {
   margin-bottom: 20px;
   margin-top: 0;
 }
-#header h2, #limites h2, #conversao h2 {
+#header h2, .obrigado h2, #limites h2, #conversao h2 {
   color: #ffffff;
   font-size: 23px;
   font-weight: normal;
   margin-bottom: 20px;
 }
-#header .logo, #limites .logo, #conversao .logo {
+#header .logo, .obrigado .logo, #limites .logo, #conversao .logo {
   width: 300px;
   height: auto;
   margin-bottom: 20px;
 }
-#header .heatmap, #limites .heatmap, #conversao .heatmap {
+#header .heatmap, .obrigado .heatmap, #limites .heatmap, #conversao .heatmap {
   width: 100%;
 }
-#header p, #limites p, #conversao p {
+#header p, .obrigado p, #limites p, #conversao p {
   color: #ffffff;
   margin-bottom: 20px;
 }
-#header .scroll, #limites .scroll, #conversao .scroll {
+#header .scroll, .obrigado .scroll, #limites .scroll, #conversao .scroll {
   color: #fff;
   position: absolute;
   margin: 0 auto;
@@ -82,7 +82,7 @@ section {
   left: 0;
   text-align: center;
 }
-#header .scroll:after, #limites .scroll:after, #conversao .scroll:after {
+#header .scroll:after, .obrigado .scroll:after, #limites .scroll:after, #conversao .scroll:after {
   content: "";
   width: 40px;
   height: 40px;
@@ -197,6 +197,12 @@ section {
   font-weight: 600;
   font-family: "Redonta";
 }
+#whatsapp .icon {
+  margin-bottom: 0;
+  width: 10%;
+  height: auto;
+  margin: 0 10px 0 0px;
+}
 
 footer {
   padding: 20px 0;
@@ -210,6 +216,61 @@ footer small {
 }
 footer a {
   color: #fff;
+}
+
+.obrigado h1 {
+  color: #222222;
+  margin: 0;
+}
+.obrigado p {
+  color: #222222;
+}
+
+.box {
+  background-color: #00B3CD;
+  padding: 30px;
+  margin: 0 auto 30px;
+}
+.box p {
+  color: #ffffff;
+}
+.box a {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+}
+.box .clique {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+.top {
+  background: #222222;
+  padding: 30px 0;
+  margin-bottom: 30px;
+}
+
+.footer-thanks {
+  margin-bottom: 60px;
+  margin: 0 auto;
+  display: block;
+}
+.footer-thanks .btn-whatsapp {
+  white-space: normal;
+  text-transform: uppercase;
+  border: 0;
+  background-color: #23CC63;
+  box-shadow: none;
+  border-radius: 5px;
+  padding: 20px 40px;
+  font-weight: 600;
+  font-family: "Redonta";
+}
+.footer-thanks .icon {
+  margin-bottom: 0;
+  width: 10%;
+  height: auto;
+  margin: 0 10px 0 0px;
 }
 
 @media screen and (max-width: 767px) {

@@ -232,6 +232,12 @@ section {
         //     background-color: #23CC63;
         // }
     }
+    .icon {
+        margin-bottom: 0;
+        width: 10%;
+        height: auto;
+        margin: 0 10px 0 0px;
+    }
 }
 
 footer{
@@ -247,6 +253,69 @@ footer{
         color: #fff;
     }
 }
+
+.obrigado{
+    @extend #header;
+    h1{
+        color: $black;
+        margin: 0;
+    }
+    p{
+        color: $black;
+    }
+}
+
+.box{
+    background-color: $blue;
+    padding: 30px;
+    margin: 0 auto 30px;
+    p{
+        color: $white;
+    }
+    a{
+        font-weight: bold;
+        font-size: 18px;
+        margin: 0;
+    }
+    .clique{
+        color: $white !important;
+        text-decoration: underline;
+    }
+}
+
+.top{
+    background: $black;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+
+.footer-thanks{
+    margin-bottom: 60px;
+    margin: 0 auto;
+    display: block;
+    .btn-whatsapp{
+        white-space: normal;
+        text-transform: uppercase;
+        border: 0;
+        background-color: #23CC63;
+        box-shadow: none;
+        border-radius: 5px;
+        padding: 20px 40px;
+        font-weight: 600;
+        font-family: 'Redonta';
+        // &:hover {
+        //     background-color: #23CC63;
+        // }
+    }
+    .icon {
+        margin-bottom: 0;
+        width: 10%;
+        height: auto;
+        margin: 0 10px 0 0px;
+    }
+
+}
+
 
 @media screen and (max-width: 767px){
     section{

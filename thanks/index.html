@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../favicon.svg">
+    <title>Comrpa Confirmada - Curso de Conversão</title>
+    <meta description="Seu funil de vendas tem muita potência. Só falta a direção certa.">
+    <meta property="og:title" content="Curso de Conversão" />
+    <meta property="og:url" content="https://cursodeconversao.com.br" />
+    <meta property="og:image" content="../assets/img/og-image.png" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5C55CH4');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body style="background-color: #fff;">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5C55CH4" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <img style="max-width: 350px;" class="logo" src="../assets/img/cursodeconversao.svg"
+                        alt="Curso de Conversão">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container obrigado">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+
+                <h1>SHOOWWW!!</h1>
+                <h1 style="margin-bottom: 30px;">Bora otimizar agora essas vendas aeee!</h1>
+
+            </div>
+        </div>
+    </div>
+    <div class="box text-center">
+        <div class="container">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                <p>Você vai acessar aqui:</p>
+                <a href="https://maratona.cursodeconversao.com.br" target="_blank">
+                    <p class="clique">Clique Aqui para Maratonar</p>
+                </a>
+                <p>No login: {seu Email} (esse que usou para comprar)</p>
+                <p>Na senha: {seu CPF ou CNPJ} (Só os números, sem ponto e sem hífen)
+                <p><b>PS:</b> Vacilo teu se jogar o seu documento por aí hein..</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-thanks">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+
+                    <h1>Entra lá, estuda, aplica e otimiza ae!</h1>
+                    <p>Qualquer parada, chama aqui:</p>
+                    <button role="button" class="btn-whatsapp btn btn-primary btn-lg"><img class="icon"
+                            src="../assets/img/whatsapp.png">Preciso de Ajuda!</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="../assets/js/jquery-2.1.4.min.js"></script>
+    <script>
+        //Rotator do Whatsapp
+        var atendente = []
+        atendente[0] = 'https://api.whatsapp.com/send?phone=5521990802711&text=Oii!%20Eu%preciso%20de%20ajuda!%20'
+        //atendente[1] = 'https://api.whatsapp.com/send?phone=5521994292234&text=Oii!%20Eu%20estava%20no%20P%C3%A1gina%20de%20Vendas%20e%20Fiquei%20com%20Obje%C3%A7%C3%B5es!'
+
+        var random = Math.floor(Math.random() * atendente.length);
+
+        var whatsapp = atendente[random];
+        $('.btn-whatsapp').wrap($('<a rel="noreferrer" target="_blank">').attr('href', whatsapp));
+    </script>
+</body>
+
+</html>
