@@ -1,6 +1,6 @@
 $(function () {
     // Links para o Checkout
-    var linkCheckout = 'https://pay.hotmart.com/N51854403W?off=7dug2wfc&checkoutMode=10&split=12';
+    var linkCheckout = 'https://pay.hotmart.com/N51854403W?off=wlvonm69&checkoutMode=10';
     var url_string = window.location.href;
     var urlparams = new URL(url_string);
     var sck = urlparams.searchParams.get("sck");

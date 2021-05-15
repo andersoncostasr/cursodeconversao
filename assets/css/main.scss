@@ -56,10 +56,39 @@ span.preco {
       }
 }
 
+.parcelamento-em-baixo{
+    margin-bottom: 0 !important;
+}
+small{
+    color: $white !important;
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+.parcelamento-em-cima{
+    margin-top: 10px;
+}
+
 section {
 	padding: 80px 0;
 }
 
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 #header{
     h1{
         font-weight: 900;
@@ -316,6 +345,64 @@ footer{
 
 }
 
+#prova-social{
+    background: $blue;
+    h1{
+        font-weight: 900;
+        color: $white;
+        font-size: 31px;
+        line-height: 40px;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    p{
+        color: #fff;
+    }
+}
+
+#aula-experimental{
+    @extend #header;
+}
+
+#garantia{
+    @extend #prova-social;
+}
+
+#faq{
+    @extend #header;
+    .panel-default>.panel-heading {
+        color: $black;
+        background-color: $black;
+        border-color: $black;
+
+    }
+    .panel-default {
+        border-color: $black !important;
+    }
+    .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;
+        color: $white;
+        font-weight: normal;
+    }
+    .panel-default>.panel-heading+.panel-collapse>.panel-body{
+        background: $black;
+        padding: 10px;
+    }
+    .panel-heading {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .panel-default>.panel-heading+.panel-collapse>.panel-body {
+        border-top-color: $black;
+    }
+    .checkout-text{
+        color: $orange;
+    }
+    p{
+        line-height: 35px;
+    }
+}
 
 @media screen and (max-width: 767px){
     section{

@@ -1,0 +1,215 @@
+@font-face {
+  font-family: Redonta;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Redonda-Bold.otf");
+}
+@font-face {
+  font-family: Redonta;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/Redonda-ExtraBold.otf");
+}
+body {
+  background: #222222;
+}
+
+.container {
+  max-width: 1460px !important;
+}
+
+h1,
+h2,
+h3,
+p,
+li {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+span.preco {
+  font-weight: normal;
+  font-size: 27px;
+}
+
+.btn-enter, .btn-enter:hover {
+  text-transform: uppercase;
+  border: 0;
+  background-color: #ff662d;
+  box-shadow: none;
+  border-radius: 5px;
+  padding: 25px;
+  font-weight: 600;
+  font-family: "Redonta";
+  white-space: normal;
+  box-shadow: 0 0 25px rgba(255, 102, 45, 0.5);
+  margin-bottom: 30px;
+}
+.parcelamento-em-baixo {
+  margin-bottom: 0 !important;
+}
+
+small {
+  color: #ffffff !important;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.parcelamento-em-cima {
+  margin-top: 10px;
+}
+
+section {
+  padding: 40px 0;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contador {
+  display: table;
+  margin: auto;
+}
+
+#header h1, #faq h1, #aula-experimental h1 {
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 31px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+#header h2, #faq h2, #aula-experimental h2 {
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+#header .logo, #faq .logo, #aula-experimental .logo {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+#header .heatmap, #faq .heatmap, #aula-experimental .heatmap {
+  width: 100%;
+}
+#header p, #faq p, #aula-experimental p {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+#header .scroll, #faq .scroll, #aula-experimental .scroll {
+  color: #fff;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+#header .scroll:after, #faq .scroll:after, #aula-experimental .scroll:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin: auto;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  -webkit-animation: 3s arrow infinite ease;
+  animation: 3s arrow infinite ease;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#header .video, #faq .video, #aula-experimental .video {
+  padding: 0 150px;
+  margin-bottom: 30px;
+}
+
+#prova-social, #garantia {
+  background: #00b3cd;
+}
+#prova-social h1, #garantia h1 {
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 31px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+#prova-social p, #garantia p {
+  color: #fff;
+}
+#prova-social img, #garantia img {
+  margin-bottom: 30px;
+}
+
+#garantia img {
+  text-align: center;
+  margin: 0 auto 30px;
+}
+
+#faq .panel-heading {
+  padding: 20px 15px;
+}
+#faq .panel-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #222222;
+}
+#faq .panel-title:hover {
+  text-decoration: none;
+}
+#faq .panel-body p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #222222;
+}
+#faq .panel-body .checkout-text {
+  color: #00b3cd;
+}
+#faq .panel-group .panel {
+  margin-bottom: 20px;
+}
+
+footer {
+  padding: 20px 0;
+}
+footer p {
+  font-size: 14px;
+  color: #fff;
+}
+footer small {
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  #header .video, #aula-experimental .video, #faq .video {
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=rmkt.css.map */

@@ -43,11 +43,43 @@ span.preco {
   font-family: "Redonta";
   white-space: normal;
 }
+.parcelamento-em-baixo {
+  margin-bottom: 0 !important;
+}
+
+small {
+  color: #ffffff !important;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.parcelamento-em-cima {
+  margin-top: 10px;
+}
+
 section {
   padding: 80px 0;
 }
 
-#header h1, .obrigado h1, #limites h1, #conversao h1 {
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#header h1, #faq h1, #aula-experimental h1, .obrigado h1, #limites h1, #conversao h1 {
   font-weight: 900;
   color: #ffffff;
   font-size: 31px;
@@ -55,25 +87,25 @@ section {
   margin-bottom: 20px;
   margin-top: 0;
 }
-#header h2, .obrigado h2, #limites h2, #conversao h2 {
+#header h2, #faq h2, #aula-experimental h2, .obrigado h2, #limites h2, #conversao h2 {
   color: #ffffff;
   font-size: 23px;
   font-weight: normal;
   margin-bottom: 20px;
 }
-#header .logo, .obrigado .logo, #limites .logo, #conversao .logo {
+#header .logo, #faq .logo, #aula-experimental .logo, .obrigado .logo, #limites .logo, #conversao .logo {
   width: 300px;
   height: auto;
   margin-bottom: 20px;
 }
-#header .heatmap, .obrigado .heatmap, #limites .heatmap, #conversao .heatmap {
+#header .heatmap, #faq .heatmap, #aula-experimental .heatmap, .obrigado .heatmap, #limites .heatmap, #conversao .heatmap {
   width: 100%;
 }
-#header p, .obrigado p, #limites p, #conversao p {
+#header p, #faq p, #aula-experimental p, .obrigado p, #limites p, #conversao p {
   color: #ffffff;
   margin-bottom: 20px;
 }
-#header .scroll, .obrigado .scroll, #limites .scroll, #conversao .scroll {
+#header .scroll, #faq .scroll, #aula-experimental .scroll, .obrigado .scroll, #limites .scroll, #conversao .scroll {
   color: #fff;
   position: absolute;
   margin: 0 auto;
@@ -82,7 +114,7 @@ section {
   left: 0;
   text-align: center;
 }
-#header .scroll:after, .obrigado .scroll:after, #limites .scroll:after, #conversao .scroll:after {
+#header .scroll:after, #faq .scroll:after, #aula-experimental .scroll:after, .obrigado .scroll:after, #limites .scroll:after, #conversao .scroll:after {
   content: "";
   width: 40px;
   height: 40px;
@@ -271,6 +303,53 @@ footer a {
   width: 10%;
   height: auto;
   margin: 0 10px 0 0px;
+}
+
+#prova-social, #garantia {
+  background: #00B3CD;
+}
+#prova-social h1, #garantia h1 {
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 31px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+#prova-social p, #garantia p {
+  color: #fff;
+}
+
+#faq .panel-default > .panel-heading {
+  color: #222222;
+  background-color: #222222;
+  border-color: #222222;
+}
+#faq .panel-default {
+  border-color: #222222 !important;
+}
+#faq .panel-title > .small, #faq .panel-title > .small > a, #faq .panel-title > a, #faq .panel-title > small, #faq .panel-title > small > a {
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+  color: #ffffff;
+  font-weight: normal;
+}
+#faq .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  background: #222222;
+  padding: 10px;
+}
+#faq .panel-heading {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+#faq .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #222222;
+}
+#faq .checkout-text {
+  color: #FF662D;
+}
+#faq p {
+  line-height: 35px;
 }
 
 @media screen and (max-width: 767px) {
